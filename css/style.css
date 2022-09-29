@@ -1,0 +1,406 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+    scroll-behavior: smooth;
+    zoom: 95%;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slideDown {
+    0%, 100% { transform: translateY(-80px); }
+    10%, 90% { transform: translateY(0px); }
+}
+@-moz-keyframes slideDown {
+    0%, 100% { -moz-transform: translateY(-80px); }
+    10%, 90% { -moz-transform: translateY(0px); }
+}
+
+#note {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    width: 100%;
+    /* margin-left: 25%; */
+    /* margin-top: 1rem; */
+
+    padding: 1rem;
+    /* left: 10em;  */
+     /* right: 10; */
+    background: #F0683C;
+    text-align: center;
+    /* line-height: 2.5; */
+    overflow: hidden; 
+    color: white;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    box-shadow: 0 0 10px #bfbfbf;
+    transform: translateY(-80px);
+    animation: slideDown 3.5s 1.0s 1 ease forwards;
+    -moz-transform:translateY(-80px);
+    -moz-animation:slideDown 5s 1.0s 1 ease forwards;
+}
+
+ 
+
+header {
+    background: var(--background);
+    text-align: center;
+    /* position: absolute; */
+    position: relative;
+    /* top: 1.2rem; */
+    color: black;
+    /* z-index: 999; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.logo{
+    font-family: Rubik;
+font-size: 28px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 1rem;
+
+}
+nav{
+    /* justify-items: flex-start; */
+    font-family: Rubik;
+font-size: 18px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+/* margin-right: 1.5rem; */
+
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 5rem;
+    display: inline;
+    
+}
+nav a{
+    color: black;
+    transition: color 150ms ease-in-out;
+}
+nav a:hover{
+    color: #F0683C;
+    
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.section1{
+
+	/* margin-left: 20%; */
+    width: 60vw;
+    margin: 0 auto;
+	margin-top: 25.6vh;
+
+}
+
+.section1-header{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 85px;
+    
+    color: #000000;
+
+}
+
+.section1-content{
+	/* width: 58.3vw; */
+	margin-top: 1.7vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */    
+    color: #000000;
+}
+
+.section1-arrow{
+	height: 100px;
+	margin-bottom: 10px;
+	background-color: red;
+}
+
+.first-section{
+	height: 95vh;
+	position: relative;
+}
+
+/* .arrow-icon{
+	position: absolute;
+	bottom: 0vh;
+	font-size: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+} */
+
+.arrow-icon-container{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3vh ;
+}
+.arrow-icon{
+/* display: inline-block; */
+    padding: 1em 49vw;
+    margin-bottom: 3em;
+    position: relative;
+    /* width: 100%; */
+    margin: 0 auto;
+
+}
+.arrow-icon img{
+
+    margin: 0 auto;
+
+}
+
+
+.second-section{
+	/* height: 95vh; */
+    margin-top: 3em;
+    margin-bottom: 8em;
+
+}
+
+
+.intro-gallery{
+    /* width: 58.3vw; */
+    width: 60vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.intro-card{
+    display: flex;
+    height: 17.5vw;
+    width: 17.5vw;
+    border-radius: 50%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.before-hover{
+    position: absolute;
+    width: 17vw;
+    margin: 0 auto;
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    transition: all 0.4s ease 0.1s
+
+
+}
+.before-hover img{
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    /* object-fit: contain; */
+
+}
+.intro-card:hover{
+    cursor: pointer;
+
+}
+.intro-card:hover .card-text{
+    opacity: 1;
+    transition: all 0.4s ease 0s
+}
+.intro-card:hover .before-hover{
+    opacity: 0;
+    transition: all 0.4s ease 0s
+}
+
+
+
+.card-text{
+    width:50%; 
+    font-family: 'Rubik';
+    /* position: absolute; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;  /* can make it 20 also*/
+    line-height: 30px;
+    /* identical to box height, or 136% */
+    
+    text-align: center;
+    opacity: 0;
+    color: #FFFFFF;   
+    transition: all 0.4s ease 0s
+
+}
+#graphic .card-text{
+    font-size: 18px;
+
+}
+
+
+
+
+
+.text1{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Rubik';
+    line-height: 34px;
+}
+
+.text2 {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Inter';
+    width: 90%;
+    margin-top: 1.56vh;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.footer-one{
+	height: 26vh;
+	width: 100%;
+	background-color: rgba(245, 245, 245, 1);
+}
+
+
+.inner-footer{
+	width: 58.3vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+.left-part{
+	width: 40.6vw;
+	margin-top: 4.69vh;
+}
+
+
+.right-image{
+	width:  17.7vw;
+	
+}
+
+.social-links{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.56vh;
+
+}
+
+.link{
+	font-size: 22px;
+	color: rgba(240, 104, 60, 1);
+	font-family: 'Rubik';
+	font-weight: 500;
+}
+
+
+/* -------------------- FOOTER RAHUL ----------------------- */
+
+.contentFooter{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 60%;
+    
+}
+
+.footer-parent{
+    display: flex;
+    margin: 2em 0;
+    align-items: center;
+}
+.contentFooter h1{
+    font-family: Rubik;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    
+}
+.footer-child>p{
+    font-family: Inter;
+font-size: 17px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.footer-links-parent{
+    display: flex;
+}
+.footer-links-parent p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+/* identical to box height, or 155% */
+    color: #F0683C;
+    margin-right: 100px;
+}
+.footer-footer{
+    width: 100%;
+    padding: 5em 0 2.5em 0 ;
+    /* margin-bottom: 5em; */
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0em;
+
+}
