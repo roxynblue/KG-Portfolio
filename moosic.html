@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritika's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Miscellanous/favicon.ico">
+
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/moosic.css">
+</head>
+
+<body>
+    
+    <div class="jump-nav">
+        <div class="jump-parent">
+
+            <div class="jump-child"><a href="#overview">Overview</a></div>
+            <div class="jump-child"><a href="#discover">Discover</a></div>
+
+            <div class="jump-child"><a href="#define">Define</a></div>
+            <div class="jump-child"><a href="#develop">Develop</a></div>
+
+            <div class="jump-child"><a href="#deliver">Deliver</a></div>
+            <div class="jump-child"><a href="#retrospection">Retrospection</a></div>
+
+
+
+        </div>
+       
+            <div id="progress">
+                <span id ="progress-value" >
+                    <img src="./Miscellanous/up-arrow.png" alt="up-arrow" style="width: 0.8em; height:0.8em;">
+                </span>
+            </div>
+         
+    </div>
+    <header>
+        <div class="logo">Moosic.com</div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="./index.html">Work
+                        <img src="./Miscellanous/down arrow.png" style="width:1rem ; display:inline">
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="dropchild"><a href="./flipkart.html">Flipkart</a></div>
+                        <div class="dropchild"><a href="./poppy.html">Poppy</a></div>
+                        <div class="dropchild"><a href="./whatsapp.html">WhatsApp</a></div>
+                        <div class="dropchild"><a href="./moosic.html">Moosic.com</a></div>
+                        <div class="dropchild"><a href="./gallery.html">1080 x 1080</a></div>
+                    </div>
+                </li>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="https://drive.google.com/file/d/18wW_CL246B_X1grY94rJncayDFldh6WN/view?usp=drivesdk" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="navContainer">
+            <div class="navChild">Work</div>
+            <div class="navChild">About Me</div>
+            <div class="navChild">Resume</div>
+        </div> -->
+    
+        
+    </header>
+
+    <!-- moosic placeholder img -->
+    <div class="moosic-intro playpausevideo" >
+        <video muted controlsList="nodownload" class="playpausevideo">
+            <source src="./Moosic/moosic intro.mp4" type="video/mp4">
+                
+            Your browser does not support the video tag. <!-- if video does not play-->
+        </video>
+        <div class="pausebtn"></div>
+            
+    </div>
+    
+
+    <div class="heading">
+        
+        <div class="headingTitle">
+            <span id="overview"></span>
+            <h1>Moosic.com</h1>
+            <p>Moosic.com is a website that allows users to <b>sync their accounts on various music platforms</b> like Spotify, YouTube Music, SoundCloud, etc.and curate mixed playlists, along with offering new music with over 20+ genres and live world radio.</p>
+        </div>
+
+        <div class="headingImg">    
+            <img src="./Moosic/moosic-process-overview.png" alt="overview"> 
+        </div>
+
+    </div>
+
+    <div class="content one">
+    <span id="discover">
+    
+        <div class="contentHeader">
+            <h1>01 <span>Discover</span></h1>
+            <p>While working, I often found myself<b> juggling between Spotify and YouTube Music</b> while trying to find that one song that suited my mood. I liked both for their algorithms and interface, but also wanted to have them in one place.<br> 
+            I wondered if people wished the same and there began the project.</p>
+        </div>
+        <div class="contentImg">
+            <img src="./Moosic/research.png">
+        </div>
+
+    </div>
+
+    <div class="content two">
+    <span id="define">
+
+        <div class="contentHeader">
+            <h1>02 <span>Define</span></h1>
+            <p><b>22-year old Sam</b> likes to listen to soft instrumental music while working. <br>
+                Since, he works on his laptop, he uses browser versions of Spotify and YouTube Music.
+            </p>
+        </div>
+        <div class="contentImg">
+            <img src="./Moosic/sam comic.png">
+        </div>
+
+        <div class="contentText">
+
+            <h1>What Sam says</h1>
+            <img src="./Moosic/what sam says.png">
+            
+
+            <h1>The problem</h1>
+            <p style="margin-top: 0.5em;">Management and utilization of user's content on different music streaming platforms can get inconvenient.</p>
+        </div>         
+            
+    </div>
+
+    <div class="content three">
+        <span id="develop">
+
+        <div class="contentHeader">
+            <h1>03 <span>Develop</span></h1>
+            <p>Based on Sam's story comes the idea of a website that allows users to sync all of their music accounts and create mixed playlists - <b>Moosic.com.</b></p>
+        </div>
+        <div class="contentText">
+            <h1>Desired features</h1>
+
+            <div class="list">
+                <p>To sync all of user's music accounts</p>
+                <p>To curate mixed playlists from different sources</p>
+                <p>To allow users to access lyrics and videos as in their current apps</p>
+            </div>
+            
+            <h1>Extra features - <em>brownie for users, strategy for service provider</em></h1>
+
+            <p>Moosic.com will need to access users' music accounts to deliver its service. There may arise <span style="font-weight: 600;">2 issues</span> here - the <span style="font-weight: 600;">paranoia of privacy</span>, and <span style="font-weight: 600;">missing out on users new to music.</span></p>
+            <br>
+            <p>For the former, we need to build confidence among the users for the website - <span style="font-weight: 600;">achieved by extending services which do not require an investment - here, Login.</span> While the latter can be resolved by adding 'Explore Music' and 'World Radio'.</p>
+
+            <h1>Colour psychology</h1>
+            <p style=" color: #7D40E1 ;"><em>"Colour is a power that directly influences the soul."</em></p>
+            <p style="text-align: right; color: #7D40E1;"><em>- Wassily Kandinsky, the pioneer of abstract art style</em></p>
+
+        </div>
+
+        <div class="contentImg threeColorableParent">
+                <div class="threeColorable"><img src="./Moosic/colorable 1.png" alt="colorable 1"></div>
+                <div class="threeColorable"><img src="./Moosic/colorable 2.png" alt="colorable 2"></div>
+        </div>
+
+        <div class="contentText">
+
+            <p>To not overshadow a person’s emotions, <span style="font-weight: 600;">choosing a neutral colour</span> like dark gray and text of lighter gray, complying with the <span style="font-weight: 600;">WCAG 2.0</span> rules for good contrast, along with fluoroscent details to show action and pop. According to Brent Jackson's tool Colorable, the contrast ratio is <span style="font-weight: 600;">5.85 - AA</span>, an industry standard.</p>
+            
+            <h1>Information architecture</h1>
+        </div>
+
+        <div style="background: #FCEEEE; padding:0.5em 0; margin:0.5em 0 0 0;">
+                
+            <div class="contentImg">
+                <img  src="./Moosic/information architecture.png" alt="information architecture">
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="content four">
+        <span id="design">
+
+        <div class="contentHeader">
+            <h1>04 <span>Design</span></h1>
+        </div>
+        <div class="contentText" style="margin-top: 2rem;"><h1>Fonts and Colour palette</h1></div>
+        <div style="background: #F5F5F5;">
+            <div class="contentImg" style="margin-top:1em; padding:1em;">
+                <img src="./Moosic/fonts and colour.png" alt="fonts and colour">
+            </div>
+        </div>
+        <div class="contentText"><h1>Rough Wireframes</h1></div>
+        <div class="contentImg" id="wireframe">
+            <img src="./Moosic/wireframes.png" alt="wireframes">
+        </div>
+        <div class="contentText"><h1>Interactive Design & Copywriting</h1></div>
+        <div style="background: #FCEEEE; padding:0.5em 0; margin:0.5em 0 0 0;">
+             
+            <div class="contentText"><p>The  name "Moosic" was followed by several more <span style="font-weight: 600;">cow puns.</span></p></div>
+
+            <div class="contentImg" style="margin-top: 0.75em;" >
+                <img  src="./Moosic/interaction design.png" alt="interaction design">
+            </div>
+            <div class="contentText"><p>Loading pages for the website containing lyrics with puns.</span></p>
+                <!-- <div class="contentImg" style="margin-top: 0.75em;" > -->
+                <img  src="./Moosic/loading pages.gif" alt="loading pages">
+                <!-- </div> -->
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="content five">
+        <span id="deliver">
+    
+        <div class="contentHeader">
+            <h1>05 <span>Deliver</span></h1>
+            <p>Landing page - 3 pages wide. Regular vertical scrolling by the user makes the page scroll horizontally</p>
+        </div>
+        <div class="contentImg" id="landingpageprelogin">
+            <img src="./Moosic/landing page pre login.png" alt="landing page pre login">
+        </div>
+        <div class="contentImg fiveParent1">
+        
+            <div class="fiveChild1">
+                <p>Sign In overlay</p>
+                <img src="./Moosic/sign in pop up.png">
+            </div>
+            <div class="fiveChild1">
+                <p>Sign Up overlay</p>
+                <img src="./Moosic/sign up pop up.png">
+            </div>
+            <div class="fiveChild1">
+                <p>Menu (before sign in)</p>
+                <img src="./Moosic/before login menu.png">
+            </div>
+            <div class="fiveChild1">
+                <p>Menu (after sign in)</p>
+                <img src="./Moosic/after login menu.png">
+            </div>
+
+        </div>
+
+        <div class="contentText"><p style="text-align: center;">Expanded music bar</p></div>
+        <div class="contentImg fiveParent2">
+            <div class="fiveChild2"><img src="./Moosic/expanded music bar.png" alt="expanded music bar"></div>
+            <div class="fiveChild2"><img src="./Moosic/expanded music bar for YT MUSIC.png" alt="expanded music bar for YT MUSIC"></div>
+        </div>
+
+        <div class="contentText"><p style="text-align: center;">Dashboard</p></div>
+        <div class="contentImg fiveImg">
+            <img src="./Moosic/dashboard.png" alt="dashboard">
+        </div>
+
+        <div class="contentText"><p style="text-align: center;">A Mixed Playlist</p></div>
+        <div class="contentImg fiveImg">
+            <img src="./Moosic/Mixed Playlist Page.png" alt="Mixed Playlist Page">
+        </div>
+
+        <div class="contentText"><p style="text-align: center;">A synced account page</p></div>
+        <div class="contentImg fiveImg">
+            <img src="./Moosic/Your Spotify page.png" alt="Synced account page">
+        </div>
+
+        <div class="contentText"><p style="text-align: center;">Playlists from the synced account</p></div>
+        <div class="contentImg fiveImg">
+            <img src="./Moosic/spotify playlist.png" alt="spotify playlist">
+        </div>
+
+        <div style=" background: #E7FCED; padding:0.5em 0; margin:0.5em 0 0 0;">
+             
+            <div class="contentText"><p>Following video shows how users can form a Mixed Playlist on Moosic.com</p></div>
+
+            <div class="contentImg fiveImg">
+                <video muted controlsList="nodownload" class="playpausevideo">
+                    <source src="./Moosic/How To Make A Mixed Playlist.m4v" type="video/mp4">
+                    
+                    Your browser does not support the video tag. <!-- if video does not play-->
+                </video>
+                <div class="pausebtn"></div>
+
+            </div>
+        </div>
+        <div class="contentText"><p style="text-align: center;">'Explore Music' page</p></div>
+
+        <div class="contentImg fiveImg fiveParent3">
+            <div class="fiveChild3 child31"><img src="./Moosic/explore music.png" alt="explore music"></div>
+            <div class="fiveChild3 child32">
+                <p>A <span style="font-weight: 600;">welcome message</span> for non-signed users informs about available features.
+                    </p>
+                   <p> Music can also be <span style="font-weight: 600;">searched via links.</span> Just paste the URL and Play/ Add to Playlist.
+                </p>
+                <img src="./Moosic/explore music options.png" alt="explore music options">
+                
+                <p>For already curated playlists on the 'Explore Music' tab, the above menu options are available for each song.</p>
+                    <p><span style="font-weight: 600;" >'Blacklist song' </span>allows users to skip that song from the playlist. <br>
+                    For signed-in users, blacklist option will blacklist the song till they list the song again. </p>
+                     <!-- <br><em style="font-weight:500 ;"> It draws a line over the song in the playlist to cut it.</em></p> -->
+            </div>
+
+            
+        </div>
+        <div class="contentText"><p style="text-align: center;margin-top:-0.5rem;">Radio</p></div>
+        <div class="contentImg fiveImg">
+                <img src="./Moosic/RADIO without login.png" alt="RADIO without login">
+        </div>
+        <span id="retrospection">
+
+
+        <div class="contentText retrospection">
+            <br>
+            <h1>Retrospection</h1>
+            
+            <p>Moosic.com was my first ever UX project. It was during the making of this project’s final screens when I learnt how to use Figma. Being it a self-initiated project, every little learning was an accomplishment. Right from discovering a problem to threading it into a story to delivering the solution, my understanding about UX has matured.</p>
+                
+            <p> No design solution is perfect. The deliverables of Moosic.com just form a preliminary solution. Syncing data from various music-streaming platforms may be an inviting model. However, feasibility w.r.t business, especially, advertisements needs to be discussed. </p>
+                
+            <p>Talking about the interface, I acknowledge that there is still enough room for improvement.</p>
+                
+            <p>I had a great time crafting the story of Moosic.com. If you liked it too, smile :) and if possible, hit me up. Nonetheless, my mailboxes are always open to a healthy criticism.</p>
+        </div>
+
+
+
+    </div>
+    
+    <!--Footer-->
+
+    <div style="background: #F5F5F5;">
+        <div class="contentFooter" style="margin-top:1em; padding:1em 0;">
+            <div class="footer-parent" style="width: 100%;">
+                <div class="footer-child">
+                    <h1>Got any ideas to geek out on?  <span style="color:#7D40E1;">Hit me up!</span></h1><br>
+                    <p>
+                        Hit me up for a daily personalized subscription of memes or if you want to discuss some trivia, talk about how amazing tomatoes are or even grouch about bitter cucumbers.
+                    </p><br>
+                    <div class="footer-links-parent">
+                        <p><a href="https://guptakritika.medium.com/" target="_blank">Medium</a></p>
+                            <p><a href="https://www.linkedin.com/in/guptakritika10/" target="_blank">LinkedIn</a></p>
+                            <p><a href="https://drive.google.com/file/d/18wW_CL246B_X1grY94rJncayDFldh6WN/view?usp=drivesdk" target="_blank">Resume</a></p>
+                    </div>
+
+                </div>
+                <div class="footer-child">
+                    <div style="width:200px; ">
+                    <img src="./Miscellanous/footer photo.png" alt="footer photo"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer-footer">
+        <h1>Made with 💙 by Kritika © 2022</h1>
+    </div>
+
+    <script src="" async defer></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+        $('.playpausevideo').parent().click(function () {
+      if($(this).children(".playpausevideo").get(0).paused){$(this).children(".playpausevideo").get(0).play();   $(this).children(".pausebtn").fadeOut(200);
+        }else{       $(this).children(".playpausevideo").get(0).pause();
+      $(this).children(".pausebtn").fadeIn(200);
+        }
+    });
+    </script>
+
+        
+    
+    
+    
+</body>
+</html>
