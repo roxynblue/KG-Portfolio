@@ -69,7 +69,10 @@ nav a:hover{
     color: #F0683C;
     
 }
- 
+
+.dropdown-content-aboutme{
+  background-color:white;
+}
 
 .headerImg{
     width: 60%;
