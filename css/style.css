@@ -126,7 +126,7 @@ ul{
 .section1{
 
 	/* margin-left: 20%; */
-    width: 66vw;
+    width: 62vw;
     margin: 0 auto;
 	/* margin-top: 25.6vh; */
     position: relative;
@@ -134,6 +134,7 @@ ul{
 }
 .section1-header{
     display: flex;
+	justify-content: center;
     align-items: flex-end;
 }
 
@@ -198,8 +199,8 @@ text-align: left;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 34px;
     /* or 167% */    
     color:#6A6A6A;
 }
