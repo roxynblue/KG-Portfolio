@@ -264,18 +264,18 @@ text-align: left;
 
 .second-section{
 	/* height: 95vh; */
-    width: 78vw;
+    width: 100%;
     margin: 0 auto;
     margin-top: 61px;
     margin-bottom: 8em;
 
 }
 .card-parent{
+	width:78vw;
+	margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
-
 }
 
 .card-child-video{
