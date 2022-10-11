@@ -333,9 +333,9 @@ text-align: left;
 }
 .card-child-subheading{
     font-family: Inter;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 900;
-    line-height: 28px;
+    line-height: 26px;
     /* letter-spacing: 0em; */
     text-align: left;
     margin-bottom: 12px;
@@ -344,9 +344,9 @@ text-align: left;
 }
 .card-child-text{
     font-family: Inter;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
 
