@@ -115,6 +115,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -138,27 +139,8 @@ text-align: left;
 /* margin-right: 1.5rem; */
 
 }
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
   
-nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 5rem;
-    display: inline;
-    
-}
-nav a{
-    color: black;
-    transition: color 150ms ease-in-out;
-}
-nav a:hover{
-    color: #F0683C;
-    
-}
+
 
   
 
@@ -173,12 +155,13 @@ nav a:hover{
 .headingTitle{
     position: relative;
     /* top: -3.3rem; */
+    margin: 0 auto;
     margin-top:0em;
     padding: 3em 0;
     padding-bottom: 1.1em;
     
-    margin-left: 20%;
-    margin-right: 20%;
+     max-width: 1200px;
+    padding: 3em 1.5rem;
   
 
 }
@@ -217,7 +200,7 @@ color: #000000;
     
 }
 
-.content{
+.contentf{
     background-color: white;
     width: 100%;
     margin: 0;
@@ -225,9 +208,10 @@ color: #000000;
 
 .contentHeader{
     position: relative;
+    margin: 0 auto;
     margin-top: 2em;
-    margin-left: 20%;
-    margin-right: 20%;
+     max-width: 1200px;
+    padding: 0 1.5rem;
 }
 
 
@@ -281,7 +265,8 @@ text-align: left;
     position: relative;
     margin: 0 auto;
     margin-top: 1rem;
-    width: 60%;
+    max-width: 1200px;
+    padding: 0 1.5rem;
     /* margin-left: 20%;
     margin-right: 20%; */
 }
@@ -330,64 +315,6 @@ text-align: left;
     color: #CC1260;
 }
 
-.contentFooter{
-    position: relative;
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 60%;
-    
-}
-
-.footer-parent{
-    display: flex;
-    margin: 2em 0;
-    align-items: center;
-}
-.contentFooter h1{
-    font-family: Rubik;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #000000;
-    
-}
-.footer-child>p{
-    font-family: Inter;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
-
-}
-.footer-links-parent{
-    display: flex;
-}
-.footer-links-parent p{
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 34px;
-/* identical to box height, or 155% */
-    color: #F0683C;
-    margin-right: 100px;
-}
-
-.footer-footer{
-    width: 100%;
-    padding: 5em 0 2.5em 0 ;
-    /* margin-bottom: 5em; */
-    text-align: center;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-
-}
 
 /* ------------------container----------------------- */
 .container{
