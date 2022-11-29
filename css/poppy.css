@@ -422,7 +422,7 @@ color: #CC1260;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .swot-child{
